@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Welcome to SolAnalyzer{% endblock %}
+{% block content %}
+    <div class="cta">
+        <a class="btn btn-secondary" href="{{ url_for('login') }}" style="margin: 10px;">Login</a>
+        <a class="register-button" href="{{ url_for('register') }}">Register</a>
+    </div>
+    <div class="home-content">
+        <h2 class="title2">Welcome to SolAnalyzer</h2>
+        <p class="body2">A simple yet effective tool. With this analyzer, you can examine the P&L (profit and loss) of Solana chain wallets and identify the best ones to track. Stop wasting time analyzing wallets manually!</p>
+        <div class="feature-container">
+            <div class="feature">
+                <img src="{{ url_for('static', filename='img/feature1.jpg') }}" alt="Feature 1">
+            </div>
+            <div class="feature">
+                <img src="{{ url_for('static', filename='img/feature2.jpg') }}" alt="Feature 2">
+            </div>
+        </div>
+    </div>
+{% endblock %}
